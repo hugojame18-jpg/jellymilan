@@ -198,12 +198,12 @@
      On choisit donc le palier le plus eleve qui reste <= au total
      (jamais un palier au-dessus, meme si c'est le plus proche). */
   var PRICE_LINKS = [
-    { price: 2,     url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13086&sub3=2lujelly'  },
-    { price: 9.99,  url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13179&sub3=lujelly'    },
-    { price: 19.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13057&sub3=3LUJELLY'   },
-    { price: 49.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12355&sub3=Lujelly'    },
-    { price: 79.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12541&sub3=Lujelly'    },
-    { price: 99.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12913&sub3=10Lujelly'  }
+    { price: 2,     url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13086&sub3=mil'  },
+    { price: 9.99,  url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13179&sub3=mil'  },
+    { price: 19.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=13057&sub3=mil'  },
+    { price: 49.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12355&sub3=mil'  },
+    { price: 79.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12541&sub3=mil'  },
+    { price: 99.99, url: 'https://t.trklinkx.com/click?pid=4784&offer_id=12913&sub3=mil'  }
   ];
   /* Retourne le palier { price, url } le plus eleve <= total (jamais au-dessus).
      Tolerance de 10 centimes pour absorber les ecarts d'arrondi normaux
