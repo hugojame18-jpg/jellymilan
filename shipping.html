@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livraison | Jellypin</title>
+<meta name="description" content="Renseignez votre adresse de livraison pour finaliser votre commande Jellypin.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="urgency-bar">
+  🔥 DÉSTOCKAGE — Il ne reste que <span class="urgency-bar__timer" id="urgency-timer">48:00:00</span> pour commander avant la fin des offres !
+</div>
+
+<!-- ====================================================================
+     En-tete simplifie : pas de navigation, pas de sortie de tunnel
+     ==================================================================== -->
+<header class="ship-header">
+  <div class="container ship-header__in">
+    <a class="logo" href="index.html" aria-label="Jellypin, accueil">
+      <span class="logo__mark">Jellypin</span>
+    </a>
+    <p class="ship-secure">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 8.8-8 10-4.6-1.2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" fill="none"/></svg>
+      Commande sécurisée
+    </p>
+  </div>
+</header>
+
+<!-- Fil du tunnel -->
+<nav class="ship-steps" aria-label="Étapes de la commande">
+  <ol class="container ship-steps__in">
+    <li class="ship-steps__done"><span>1</span> Panier</li>
+    <li class="ship-steps__now" aria-current="step"><span>2</span> Livraison</li>
+    <li><span>3</span> Paiement</li>
+  </ol>
+</nav>
+
+<main class="container ship-main">
+
+  <!-- Panier vide : on ne montre jamais un formulaire sans commande -->
+  <div class="ship-empty" id="ship-empty" hidden>
+    <h1>Votre panier est vide</h1>
+    <p>Ajoutez une peluche à votre panier pour passer commande.</p>
+    <a class="btn" href="index.html">Retour à la boutique</a>
+  </div>
+
+  <div class="ship-grid" id="ship-grid" hidden>
+
+    <!-- ============================ Formulaire ============================ -->
+    <section class="ship-form-col">
+      <h1 class="ship-title">Où livrer votre commande&nbsp;?</h1>
+      <p class="ship-lede">Livraison offerte · Expédié sous 24h · Aucun compte à créer</p>
+
+      <form id="ship-form" novalidate>
+
+        <div class="ship-row">
+          <div class="ship-field">
+            <label for="f-first">Prénom</label>
+            <input id="f-first" name="first" type="text" autocomplete="given-name"
+                   autocapitalize="words" required placeholder="Marie">
+            <p class="ship-err" data-err-for="f-first" hidden>Indiquez votre prénom.</p>
+          </div>
+          <div class="ship-field">
+            <label for="f-last">Nom</label>
+            <input id="f-last" name="last" type="text" autocomplete="family-name"
+                   autocapitalize="words" required placeholder="Dubois">
+            <p class="ship-err" data-err-for="f-last" hidden>Indiquez votre nom.</p>
+          </div>
+        </div>
+
+        <div class="ship-field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email"
+                 inputmode="email" autocapitalize="off" spellcheck="false" required
+                 placeholder="marie.dubois@email.com">
+          <p class="ship-hint">Pour recevoir la confirmation et le suivi de colis.</p>
+          <p class="ship-err" data-err-for="f-email" hidden>Cet email semble incomplet.</p>
+        </div>
+
+        <div class="ship-field">
+          <label for="f-phone">Téléphone mobile</label>
+          <div class="ship-phone">
+            <span class="ship-phone__prefix" id="f-prefix">+33</span>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel-national"
+                   inputmode="tel" required placeholder="6 12 34 56 78">
+          </div>
+          <p class="ship-hint">Le transporteur vous prévient par SMS avant la livraison.</p>
+          <p class="ship-err" data-err-for="f-phone" hidden>Numéro trop court.</p>
+        </div>
+
+        <div class="ship-field">
+          <label for="f-address">Adresse</label>
+          <input id="f-address" name="address" type="text" autocomplete="street-address"
+                 required placeholder="12 rue des Lilas, appartement 3">
+          <p class="ship-err" data-err-for="f-address" hidden>Indiquez votre adresse.</p>
+        </div>
+
+        <div class="ship-row">
+          <div class="ship-field ship-field--zip">
+            <label for="f-zip">Code postal</label>
+            <input id="f-zip" name="zip" type="text" autocomplete="postal-code"
+                   inputmode="numeric" required placeholder="75011">
+            <p class="ship-err" data-err-for="f-zip" hidden>Code postal manquant.</p>
+          </div>
+          <div class="ship-field">
+            <label for="f-city">Ville</label>
+            <input id="f-city" name="city" type="text" autocomplete="address-level2"
+                   autocapitalize="words" required placeholder="Paris">
+            <p class="ship-err" data-err-for="f-city" hidden>Indiquez votre ville.</p>
+          </div>
+        </div>
+
+        <div class="ship-field">
+          <label for="f-country">Pays</label>
+          <select id="f-country" name="country" autocomplete="country-name" required>
+            <option value="France"            data-prefix="+33"  selected>France</option>
+            <option value="Belgique"          data-prefix="+32">Belgique</option>
+            <option value="Suisse"            data-prefix="+41">Suisse</option>
+            <option value="Luxembourg"        data-prefix="+352">Luxembourg</option>
+            <option value="Monaco"            data-prefix="+377">Monaco</option>
+            <option value="Canada"            data-prefix="+1">Canada</option>
+            <option value="Espagne"           data-prefix="+34">Espagne</option>
+            <option value="Italie"            data-prefix="+39">Italie</option>
+            <option value="Allemagne"         data-prefix="+49">Allemagne</option>
+            <option value="Portugal"          data-prefix="+351">Portugal</option>
+            <option value="Pays-Bas"          data-prefix="+31">Pays-Bas</option>
+            <option value="Royaume-Uni"       data-prefix="+44">Royaume-Uni</option>
+          </select>
+        </div>
+
+        <button type="submit" class="ship-submit" id="ship-submit">
+          Procéder au paiement — <span id="ship-submit-total"></span>
+        </button>
+
+        <p class="ship-trust">
+          🔒 Vos informations sont transmises uniquement pour préparer votre commande.
+        </p>
+      </form>
+    </section>
+
+    <!-- ============================ Recapitulatif ============================ -->
+    <aside class="ship-summary">
+      <h2 class="ship-summary__title">Votre commande</h2>
+      <div id="ship-items"></div>
+
+      <dl class="ship-totals">
+        <div>
+          <dt>Sous-total</dt>
+          <dd id="ship-subtotal"></dd>
+        </div>
+        <div>
+          <dt>Livraison</dt>
+          <dd class="ship-free">Offerte</dd>
+        </div>
+        <div class="ship-totals__grand">
+          <dt>Total</dt>
+          <dd id="ship-total"></dd>
+        </div>
+      </dl>
+
+      <p class="ship-promo" id="ship-promo" hidden></p>
+
+      <ul class="ship-perks">
+        <li>🚚 Expédié sous 24h, livré en 3 jours</li>
+        <li>↩️ Retour gratuit sous 30 jours</li>
+        <li>🔒 Paiement sécurisé</li>
+      </ul>
+    </aside>
+
+  </div>
+</main>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+<script src="shipping.js"></script>
+</body>
+</html>

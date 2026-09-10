@@ -219,6 +219,7 @@
   }
   function linkForTotal(total) { return tierForTotal(total).url; }
   window.jcLinkForTotal = linkForTotal;
+  window.jcTierForTotal = tierForTotal;
 
   function euro(n) { return n.toFixed(2).replace('.', ',') + '€'; }
 
@@ -330,7 +331,9 @@
       }
       if (checkout) {
         checkout.hidden = false;
-        checkout.href = tier.url;
+        /* On passe d'abord par la page livraison : elle recalcule le palier
+           depuis le panier et ajoute les coordonnees en sub9..sub16. */
+        checkout.href = 'shipping.html';
       }
       if (promoEl) {
         var diff = tier.price - total;

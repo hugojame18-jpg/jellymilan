@@ -27,6 +27,10 @@ body{
 }
 
 img{display:block;max-width:100%}
+/* Un display: explicite dans une regle de classe l'emporte sur le display:none
+   que le navigateur applique a [hidden]. Sans ce !important, masquer un
+   element via .hidden = true reste sans effet (bouton paiement, recap...). */
+[hidden]{display:none!important}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h1,h2,h3,p{margin:0}
@@ -875,4 +879,98 @@ h1,h2,h3,p{margin:0}
   letter-spacing:.04em;
   text-transform:uppercase;
   color:var(--burgundy);
+}
+
+/* ==========================================================================
+   Page livraison (shipping.html)
+   ========================================================================== */
+.ship-header{border-bottom:1px solid var(--line);background:#fff}
+.ship-header__in{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.ship-secure{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--grey)}
+.ship-secure svg{width:18px;height:18px;fill:var(--burgundy)}
+
+.ship-steps{background:var(--cream-light);border-bottom:1px solid var(--line)}
+.ship-steps__in{display:flex;gap:26px;list-style:none;margin:0;padding-top:13px;padding-bottom:13px;font-size:13px;color:var(--grey);flex-wrap:wrap}
+.ship-steps__in li{display:flex;align-items:center;gap:8px}
+.ship-steps__in span{display:grid;place-items:center;width:21px;height:21px;border-radius:50%;border:1px solid currentColor;font-size:11px;font-weight:700}
+.ship-steps__done{color:var(--burgundy)}
+.ship-steps__now{color:var(--ink);font-weight:700}
+.ship-steps__now span{background:var(--ink);border-color:var(--ink);color:#fff}
+
+.ship-main{padding-top:38px;padding-bottom:64px}
+.ship-grid{display:grid;grid-template-columns:1fr 380px;gap:52px;align-items:start}
+
+.ship-title{font-size:27px;font-weight:700;line-height:1.25}
+.ship-lede{margin-top:7px;font-size:14px;color:var(--grey)}
+#ship-form{margin-top:26px}
+
+.ship-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.ship-field{margin-bottom:17px}
+.ship-field--zip{max-width:100%}
+.ship-field label{display:block;margin-bottom:6px;font-size:13px;font-weight:600}
+.ship-field input,.ship-field select{
+  width:100%;padding:12px 13px;font:inherit;font-size:15px;color:var(--ink);
+  background:#fff;border:1px solid var(--line);border-radius:0;
+  transition:border-color .15s ease,box-shadow .15s ease;
+}
+.ship-field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 50%,calc(100% - 14px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:38px}
+.ship-field input:focus,.ship-field select:focus{outline:0;border-color:var(--ink);box-shadow:0 0 0 3px rgba(44,42,41,.09)}
+.ship-field input::placeholder{color:#b3afa8}
+.ship-field input.is-invalid,.ship-field select.is-invalid{border-color:#c0392b;box-shadow:0 0 0 3px rgba(192,57,43,.09)}
+
+.ship-hint{margin-top:5px;font-size:12px;color:var(--grey)}
+.ship-err{margin-top:5px;font-size:12px;font-weight:600;color:#c0392b}
+
+.ship-phone{display:flex;align-items:stretch;border:1px solid var(--line);background:#fff;transition:border-color .15s ease,box-shadow .15s ease}
+.ship-phone:focus-within{border-color:var(--ink);box-shadow:0 0 0 3px rgba(44,42,41,.09)}
+.ship-phone__prefix{display:grid;place-items:center;padding:0 13px;font-size:15px;font-weight:600;color:var(--grey);background:var(--cream-light);border-right:1px solid var(--line);white-space:nowrap}
+.ship-phone input{border:0!important;box-shadow:none!important}
+.ship-phone input:focus{box-shadow:none!important}
+
+.ship-submit{
+  display:block;width:100%;margin-top:10px;padding:16px 20px;
+  font-size:15px;font-weight:700;color:#fff;background:var(--burgundy);
+  border:1px solid var(--burgundy);border-radius:0;cursor:pointer;
+  transition:background-color .2s ease,opacity .2s ease;
+}
+.ship-submit:hover{background:#570e26}
+.ship-submit:disabled{opacity:.6;cursor:default}
+.ship-trust{margin-top:13px;font-size:12px;color:var(--grey);text-align:center}
+
+/* Recapitulatif ------------------------------------------------------------ */
+.ship-summary{background:var(--cream-light);border:1px solid var(--line);padding:24px;position:sticky;top:20px}
+.ship-summary__title{font-size:17px;font-weight:700;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.ship-item{display:grid;grid-template-columns:60px 1fr auto;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+.ship-item img{width:60px;height:72px;object-fit:cover;background:#fff}
+.ship-item__name{font-size:14px;font-weight:600;line-height:1.35}
+.ship-item__qty{margin-top:3px;font-size:12px;color:var(--grey)}
+.ship-item__price{font-size:14px;font-weight:700;white-space:nowrap}
+
+.ship-totals{margin:17px 0 0;font-size:14px}
+.ship-totals div{display:flex;justify-content:space-between;padding:6px 0}
+.ship-totals dt{color:var(--grey)}
+.ship-totals dd{margin:0;font-weight:600}
+.ship-free{color:#1e7a45;font-weight:700}
+.ship-totals__grand{margin-top:9px;padding-top:13px!important;border-top:1px solid var(--line);font-size:17px}
+.ship-totals__grand dt{color:var(--ink);font-weight:700}
+.ship-totals__grand dd{font-weight:700}
+
+.ship-promo{margin-top:13px;padding:10px 12px;font-size:13px;background:#fff;border:1px dashed var(--burgundy);color:var(--burgundy)}
+.ship-perks{margin:19px 0 0;padding:0;list-style:none;font-size:13px;color:var(--grey)}
+.ship-perks li{padding:5px 0}
+
+.ship-empty{padding:70px 0;text-align:center}
+.ship-empty h1{font-size:24px;font-weight:700}
+.ship-empty p{margin:11px 0 24px;color:var(--grey)}
+
+@media(max-width:900px){
+  .ship-grid{grid-template-columns:1fr;gap:32px}
+  /* Sur mobile le recap passe au-dessus : on voit ce qu'on achete d'abord. */
+  .ship-summary{order:-1;position:static;padding:19px}
+  .ship-main{padding-top:26px}
+  .ship-title{font-size:22px}
+}
+@media(max-width:480px){
+  .ship-row{grid-template-columns:1fr;gap:0}
+  .ship-steps__in{gap:15px;font-size:12px}
 }
