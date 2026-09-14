@@ -4,25 +4,25 @@ window.IMG_PREFIX = 'https://cdn11.bigcommerce.com/s-dt3q8edcif/images/stencil/5
 
 window.CATEGORIES = {
   'mystere': {
-    title: 'JELLYPIN MYSTÈRE', crumbs: ['Accueil', 'Collections'], count: '4',
-    intro: 'Vous ne choisissez pas votre Jellypin : on le tire au sort pour vous. Du ticket à 2€ au coffret collector, la surprise est garantie.',
+    title: 'JELLYWON MYSTÈRE', crumbs: ['Accueil', 'Collections'], count: '4',
+    intro: 'Vous ne choisissez pas votre Jellywon : on le tire au sort pour vous. Du ticket à 2€ au coffret collector, la surprise est garantie.',
     dynamic: true,
     filterBadge: 'Mystère',
     rows: []
   },
 
-  'packs-jellypin': {
-    title: 'PACKS JELLYPIN', crumbs: ['Accueil', 'Collections'], count: '3',
-    intro: 'Plusieurs Jellypins réunis dans un seul pack, à prix fixe et malin.',
+  'packs-jellywon': {
+    title: 'PACKS JELLYWON', crumbs: ['Accueil', 'Collections'], count: '3',
+    intro: 'Plusieurs Jellywons réunis dans un seul pack, à prix fixe et malin.',
     rows: [
       "pack-duo-fruits|Pack Duo Amuseables Fruits|49,99€|Pack|329/15945/A6PEACH__95074.1763051157.jpg",
       "pack-trio-jardin|Pack Trio Amuseables Jardin|49,99€|Pack|1867/7899/A6PCT__55754.1.jpg",
-      "pack-surprise-jellypin|Pack Surprise Jellypin|49,99€|Pack|1951/16112/A4SWEE__10188.1765311964.jpg"
+      "pack-surprise-jellywon|Pack Surprise Jellywon|49,99€|Pack|1951/16112/A4SWEE__10188.1765311964.jpg"
     ]
   },
   'nouveautes': {
     title: 'NOUVEAUTÉS', crumbs: ['Accueil'], count: '40',
-    intro: 'Les tout derniers Jellypins, fraîchement arrivés dans la famille.',
+    intro: 'Les tout derniers Jellywons, fraîchement arrivés dans la famille.',
     rows: [
       "amuseables-flickerty-candle|Amuseables Flickerty Candle|19,99€|Nouveauté|2087/17943/A4CAND__03438.1.jpg",
       "growlston-gargoyle|Growlston Gargoyle|9,99€|Nouveauté|2091/17956/GAR3GYL__90784.1.jpg",
@@ -51,9 +51,9 @@ window.CATEGORIES = {
     ]
   },
 
-  'tous-les-jellypins': {
-    title: 'TOUS LES JELLYPINS', crumbs: ['Accueil'], count: '548',
-    intro: 'Toute la famille Jellypin réunie au même endroit.',
+  'tous-les-jellywons': {
+    title: 'TOUS LES JELLYWONS', crumbs: ['Accueil'], count: '548',
+    intro: 'Toute la famille Jellywon réunie au même endroit.',
     dynamic: true,
     rows: [
       "albee-bee|Albee Bee|9,99€|De Retour en Stock|169/11610/HAP3BEE__12251.1.jpg",
@@ -185,7 +185,7 @@ window.CATEGORIES = {
       "amuseables-zapperty-lightning-bolt|Amuseables Zapperty Lightning Bolt|19,99€|Nouveauté|2068/17697/A2BLT__02056.1.png",
       "amuseables-black-hole-bag-charm|Porte-clés Amuseables Black Hole|19,99€|Nouveauté|2012/17076/A4BHBC__06656.1.jpg",
       "amuseables-sports-walston-whistle|Amuseables Sports Walston Whistle|19,99€|Nouveauté|2081/17715/AMS4W__92020.1.png",
-      "amuseables-jellypin-football|Amuseables Jellypin Football|19,99€|Nouveauté|2051/17354/AS2FB__65359.1.jpg",
+      "amuseables-jellywon-football|Amuseables Jellywon Football|19,99€|Nouveauté|2051/17354/AS2FB__65359.1.jpg",
       "amuseables-aubergine-bum-bag|Sac banane Amuseables Aubergine|19,99€|Nouveauté|1970/16535/A4AUBBAG__60574.1.jpg",
       "amuseables-peanut|Amuseables Peanut|9,99€|Best Seller|124/7934/A6PE__17318.1.jpg",
       "amuseables-birthday-cake|Amuseables Birthday Cake|9,99€|Best Seller|115/17861/A2BC__96104.1.jpg",
@@ -204,7 +204,7 @@ window.CATEGORIES = {
 
   'accessoires': {
     title: 'ACCESSOIRES', crumbs: ['Accueil'], count: '55',
-    intro: 'Sacs, pochettes et porte-clés pour emmener un Jellypin partout avec vous.',
+    intro: 'Sacs, pochettes et porte-clés pour emmener un Jellywon partout avec vous.',
     subs: [['Sacs & Pochettes', 'accessoires'], ['Porte-clés', 'accessoires'], ['Chapeaux & Écharpes', 'accessoires']],
     rows: [
       "ricky-rain-frog-pouch|Pochette Ricky Rain Frog|9,99€|Nouveauté|1958/18052/RR4P__51635.1.jpg",
@@ -233,7 +233,7 @@ window.CATEGORIES = {
 
   'best-sellers': {
     title: 'BEST SELLERS', crumbs: ['Accueil', 'Collections'], count: '173',
-    intro: 'Les Jellypins préférés, ceux qu’on adopte encore et encore.',
+    intro: 'Les Jellywons préférés, ceux qu’on adopte encore et encore.',
     rows: [
       "albee-bee|Albee Bee|9,99€|De Retour en Stock|169/11610/HAP3BEE__12251.1.jpg",
       "amuseables-pink-and-white-marshmallows|Amuseables Pink and White Marshmallows|19,99€|Best Seller|1524/7915/A6MPW__01155.1.jpg",
@@ -296,14 +296,14 @@ window.CATEGORIES = {
   /* Pages d'atterrissage : uniquement des sous-categories, comme sur le site */
   'collections': {
     title: 'COLLECTIONS', crumbs: ['Accueil'], landing: true,
-    intro: 'Explorez les collections Jellypin, saison après saison.',
+    intro: 'Explorez les collections Jellywon, saison après saison.',
     subs: [
       ['Halloween', 'halloween'], ['Automne & Hiver', 'nouveautes'], ['Printemps & Été', 'nouveautes'],
       ['Space', 'amuseables'], ['Best Sellers', 'best-sellers'], ['Bientôt Disponible', 'nouveautes'],
-      ['De Retour en Stock', 'de-retour-en-stock'], ['Toutes les Peluches', 'tous-les-jellypins'],
+      ['De Retour en Stock', 'de-retour-en-stock'], ['Toutes les Peluches', 'tous-les-jellywons'],
       ['Bashful Bunnies', 'lapins'], ['Tous les Bashfuls', 'lapins'],
-      ['Bartholomew Bear & ses Amis', 'animaux'], ['Petites Peluches', 'tous-les-jellypins'],
-      ['Peluches Habillées', 'tous-les-jellypins'], ['Ultra Doux & Câlin', 'tous-les-jellypins']
+      ['Bartholomew Bear & ses Amis', 'animaux'], ['Petites Peluches', 'tous-les-jellywons'],
+      ['Peluches Habillées', 'tous-les-jellywons'], ['Ultra Doux & Câlin', 'tous-les-jellywons']
     ]
   },
 
@@ -311,26 +311,26 @@ window.CATEGORIES = {
     title: 'BÉBÉ', crumbs: ['Accueil'], landing: true,
     intro: 'Des premières peluches toutes douces, pensées pour les tout-petits.',
     subs: [
-      ['Cadeaux Bébé', 'tous-les-jellypins'], ['Puériculture & Jouets d’Éveil', 'tous-les-jellypins'],
-      ['Cadeaux Bébé Personnalisés', 'personnalisation'], ['Couvertures & Premières Peluches', 'tous-les-jellypins']
+      ['Cadeaux Bébé', 'tous-les-jellywons'], ['Puériculture & Jouets d’Éveil', 'tous-les-jellywons'],
+      ['Cadeaux Bébé Personnalisés', 'personnalisation'], ['Couvertures & Premières Peluches', 'tous-les-jellywons']
     ]
   },
 
   'livres': {
     title: 'LIVRES', crumbs: ['Accueil'], landing: true,
-    intro: 'Plongez dans le monde merveilleux de notre bibliothèque Jellypin et des fabuleuses histoires qui s’y cachent.',
+    intro: 'Plongez dans le monde merveilleux de notre bibliothèque Jellywon et des fabuleuses histoires qui s’y cachent.',
     subs: [
-      ['Livres d’Histoires', 'tous-les-jellypins'], ['Livres en Tissu', 'tous-les-jellypins'],
-      ['Livres « Si j’étais… »', 'tous-les-jellypins'], ['Packs Livre & Peluche', 'tous-les-jellypins']
+      ['Livres d’Histoires', 'tous-les-jellywons'], ['Livres en Tissu', 'tous-les-jellywons'],
+      ['Livres « Si j’étais… »', 'tous-les-jellywons'], ['Packs Livre & Peluche', 'tous-les-jellywons']
     ]
   },
 
   'personnalisation': {
     title: 'PERSONNALISATION', crumbs: ['Accueil'], landing: true,
-    intro: 'Brodez un prénom, choisissez un pull : un Jellypin rien qu’à vous.',
+    intro: 'Brodez un prénom, choisissez un pull : un Jellywon rien qu’à vous.',
     subs: [
       ['Lapins Personnalisés', 'lapins'], ['Pulls Personnalisés', 'lapins'],
-      ['Premières Peluches Personnalisées', 'tous-les-jellypins'], ['Amuseables Personnalisés', 'amuseables']
+      ['Premières Peluches Personnalisées', 'tous-les-jellywons'], ['Amuseables Personnalisés', 'amuseables']
     ]
   },
 
@@ -339,7 +339,7 @@ window.CATEGORIES = {
     intro: 'Offrir un cadeau personnalisé, pour toutes les occasions.',
     subs: [
       ['Anniversaire', 'best-sellers'], ['Cadeaux Classiques', 'best-sellers'],
-      ['Rentrée Scolaire', 'tous-les-jellypins'], ['Cadeaux pour les Gourmands', 'amuseables'],
+      ['Rentrée Scolaire', 'tous-les-jellywons'], ['Cadeaux pour les Gourmands', 'amuseables'],
       ['Découvrir les nouveautés estivales', 'nouveautes']
     ]
   },

@@ -1,8 +1,8 @@
 ﻿/* Donnees produits — reprises de fr.jellypin.com */
 window.PRODUCTS = [
   {
-    slug: 'jellypin-mystere',
-    name: 'Jellypin Mystère',
+    slug: 'jellywon-mystere',
+    name: 'Jellywon Mystère',
     sku: 'JP-MYST01',
     price: 2,
     priceLabel: '2,00€',
@@ -11,7 +11,7 @@ window.PRODUCTS = [
     reviews: 0,
     badge: 'Mystère',
     desc: [
-      'Un Jellypin choisi au hasard dans toute la collection, expédié dans son emballage surprise. Personne ne sait lequel arrive — pas même nous.',
+      'Un Jellywon choisi au hasard dans toute la collection, expédié dans son emballage surprise. Personne ne sait lequel arrive — pas même nous.',
       'Le moyen le moins cher de commencer sa collection, ou de tenter sa chance sur une pièce rare.'
     ],
     imgs: [
@@ -25,11 +25,11 @@ window.PRODUCTS = [
     price: 19.99,
     priceLabel: '19,99€',
     dim: 'Surprise — 2 peluches',
-    crumbs: ['Accueil', 'Collections', 'Jellypin Mystère'],
+    crumbs: ['Accueil', 'Collections', 'Jellywon Mystère'],
     reviews: 0,
     badge: 'Mystère',
     desc: [
-      'Deux Jellypins tirés au sort dans toute la collection, jamais deux fois le même dans un duo. On garantit la surprise, pas le thème.',
+      'Deux Jellywons tirés au sort dans toute la collection, jamais deux fois le même dans un duo. On garantit la surprise, pas le thème.',
       'La bonne façon de doubler sa collection sans choisir — et sans y passer une heure.'
     ],
     imgs: [
@@ -44,7 +44,7 @@ window.PRODUCTS = [
     price: 49.99,
     priceLabel: '49,99€',
     dim: 'Surprise — 3 peluches Halloween',
-    crumbs: ['Accueil', 'Collections', 'Jellypin Mystère'],
+    crumbs: ['Accueil', 'Collections', 'Jellywon Mystère'],
     reviews: 0,
     badge: 'Mystère',
     desc: [
@@ -63,11 +63,11 @@ window.PRODUCTS = [
     price: 99.99,
     priceLabel: '99,99€',
     dim: 'Surprise — 5 peluches dont 1 rare',
-    crumbs: ['Accueil', 'Collections', 'Jellypin Mystère'],
+    crumbs: ['Accueil', 'Collections', 'Jellywon Mystère'],
     reviews: 0,
     badge: 'Mystère',
     desc: [
-      'Cinq Jellypins surprise, dont au moins une pièce rare ou déjà retirée du catalogue. Le seul coffret où la pièce rare est garantie.',
+      'Cinq Jellywons surprise, dont au moins une pièce rare ou déjà retirée du catalogue. Le seul coffret où la pièce rare est garantie.',
       'Livré dans son emballage collector, prêt à offrir tel quel.'
     ],
     imgs: [
@@ -82,7 +82,7 @@ window.PRODUCTS = [
     price: 49.99,
     priceLabel: '49,99€',
     dim: 'Pack de 2 peluches',
-    crumbs: ['Accueil', 'Collections', 'Packs Jellypin'],
+    crumbs: ['Accueil', 'Collections', 'Packs Jellywon'],
     reviews: 0,
     badge: 'Pack',
     desc: [
@@ -101,7 +101,7 @@ window.PRODUCTS = [
     price: 49.99,
     priceLabel: '49,99€',
     dim: 'Pack de 3 peluches',
-    crumbs: ['Accueil', 'Collections', 'Packs Jellypin'],
+    crumbs: ['Accueil', 'Collections', 'Packs Jellywon'],
     reviews: 0,
     badge: 'Pack',
     desc: [
@@ -115,13 +115,13 @@ window.PRODUCTS = [
     ]
   },
   {
-    slug: 'pack-surprise-jellypin',
-    name: 'Pack Surprise Jellypin',
+    slug: 'pack-surprise-jellywon',
+    name: 'Pack Surprise Jellywon',
     sku: 'PACK-SURP01',
     price: 49.99,
     priceLabel: '49,99€',
     dim: 'Pack de 3 à 4 peluches surprises',
-    crumbs: ['Accueil', 'Collections', 'Packs Jellypin'],
+    crumbs: ['Accueil', 'Collections', 'Packs Jellywon'],
     reviews: 0,
     badge: 'Pack',
     desc: [
@@ -143,7 +143,7 @@ window.PRODUCTS = [
     crumbs: ['Accueil', 'Collections', 'De Retour en Stock'],
     reviews: 4,
     desc: [
-      'Ne vous fiez pas à ses joues rosées. Amuseables Peach, fine spécialiste de fruits, est la critique gastronomique la plus redoutable que Jellypin ait connu.',
+      'Ne vous fiez pas à ses joues rosées. Amuseables Peach, fine spécialiste de fruits, est la critique gastronomique la plus redoutable que Jellywon ait connu.',
       'Du crumble au chutney, elle a tout goûté et tout jugé, consignant soigneusement ses notes dans son carnet de velours. Opiniâtre, elle s’est un jour lancée dans un débat, courtois mais passionné, avec Amuseables Banana sur la suprématie de la confiture face à la gelée. Sa nièce, Amuseables Cherry, pense qu’elle devrait lancer sa propre émission culinaire et, à vrai dire, l’idée la tente de plus en plus.',
       'Sous la douceur de sa peau de pêche, elle nourrit le rêve de partager, avec qui veut bien l’écouter, ses théories bien arrêtées sur la compote parfaite.'
     ],
@@ -230,7 +230,7 @@ window.PRODUCTS = [
     desc: [
       'Tout a commencé avec une fête d’anniversaire à laquelle il était invité. Outré par l’absence de code vestimentaire, Peanut a alors décidé d’en inventer un : « Petits félins ». Et depuis... tout s’est enchaîné.',
       'On l’a revu porter son costume à Halloween, puis pour célébrer la Journée internationale du chat, et dernièrement pour prendre le train. (« C’est très pratique pour voyager », a-t-il miaulé.)',
-      'Peanut sait si bien se fondre dans le personnage que même ses amis les plus proches s’y sont trompés... Eh oui, Jellypin Jack aussi ! (Amuseables Bean, en revanche, ne s’est jamais laissé berner. Il reconnaîtrait cette houpette entre mille.)'
+      'Peanut sait si bien se fondre dans le personnage que même ses amis les plus proches s’y sont trompés... Eh oui, Jellywon Jack aussi ! (Amuseables Bean, en revanche, ne s’est jamais laissé berner. Il reconnaîtrait cette houpette entre mille.)'
     ],
     imgs: [
       'https://cdn11.bigcommerce.com/s-dt3q8edcif/images/stencil/1000w/products/1867/7899/A6PCT__55754.1755712197.jpg',
