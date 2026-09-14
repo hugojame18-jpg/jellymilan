@@ -38,7 +38,7 @@
   };
 
   /* --- Entete de fiche ---------------------------------------------------- */
-  document.title = p.name + ' – Produit Officiel Jellypin';
+  document.title = p.name + ' – Produit Officiel Jellywon';
   setAll('data-name', p.name);
   setAll('data-price', p.priceLabel || euro(p.price));
   setAll('data-sku', p.sku || '—');

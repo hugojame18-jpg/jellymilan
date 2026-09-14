@@ -2,12 +2,12 @@
 (function () {
   'use strict';
 
-  var key = new URLSearchParams(location.search).get('c') || 'tous-les-jellypins';
+  var key = new URLSearchParams(location.search).get('c') || 'tous-les-jellywons';
   var cats = window.CATEGORIES || {};
-  var cat = cats[key] || cats['tous-les-jellypins'];
+  var cat = cats[key] || cats['tous-les-jellywons'];
   var PFX = window.IMG_PREFIX;
 
-  document.title = cat.title + ' – Site Web Officiel Jellypin';
+  document.title = cat.title + ' – Site Web Officiel Jellywon';
   document.querySelector('[data-title]').textContent = cat.title;
   document.querySelector('[data-intro]').textContent = cat.intro || '';
 

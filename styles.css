@@ -37,7 +37,7 @@ h1,h2,h3,p{margin:0}
 
 .container{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
 
-/* Bouton contour, style Jellypin -------------------------------------------- */
+/* Bouton contour, style Jellywon -------------------------------------------- */
 .btn{
   display:inline-block;
   padding:8px 36px;
@@ -789,7 +789,7 @@ h1,h2,h3,p{margin:0}
 .pdp__sizelink{cursor:pointer}
 
 /* Mention de prix d'appel sur une tuile de categorie */
-/* --- Bannière Jellypin Mystère ------------------------------------------ */
+/* --- Bannière Jellywon Mystère ------------------------------------------ */
 .mystere-banner{
   display:flex;
   align-items:center;
