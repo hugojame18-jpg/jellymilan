@@ -1,303 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Produit Officiel Jellywon</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<!-- Statcounter — jellywon.site (repli <noscript> en fin de <body>) -->
-<script type="text/javascript">var sc_project=13355023;var sc_invisible=1;var sc_security="32c182ab";</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<title>Produit — Jellypin</title>
+<link rel="canonical" href="https://jellypin.site/product.html">
+<meta name="robots" content="noindex, follow">
+<!-- Redirection sans JavaScript -->
+<meta http-equiv="refresh" content="0; url=https://jellypin.site/product.html">
+<style>
+  body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;
+       justify-content:center;gap:16px;background:#faf6ec;color:#2c2a29;
+       font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,sans-serif}
+  .logo{font-size:27px;font-weight:700;color:#6d1230}
+  p{margin:0;font-size:14.5px;color:#6d6a66}
+  a{color:#6d1230}
+</style>
+<script>
+  /* Redirection immediate en conservant les parametres (?c=, ?p=, ?t=...). */
+  (function () {
+    var d = "https://jellypin.site/product.html" + window.location.search + window.location.hash;
+    window.location.replace(d);
+  })();
+</script>
 </head>
 <body>
-
-<div class="urgency-bar">
-  🔥 DÉSTOCKAGE — Il ne reste que <span class="urgency-bar__timer" id="urgency-timer">48:00:00</span> pour commander avant la fin des offres !
-</div>
-<div class="promo-bar">
-  🚚 Livraison offerte dès 2&nbsp;&euro;&ensp;|&ensp;⚡ Expédié en 24h, livré en 3 jours &mdash; <a href="#" data-open-cart>Voir nos offres</a>
-</div>
-
-<header class="header">
-  <div class="header__top">
-    <form class="search" role="search" onsubmit="return false">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
-      <input type="search" placeholder="Que recherchez-vous&nbsp;?" aria-label="Recherche">
-    </form>
-
-    <a class="logo" href="index.html" aria-label="Jellywon, accueil">
-      <span class="logo__mark">Jellywon</span>
-    </a>
-
-    <div class="header__actions">
-      <button class="search-toggle" aria-label="Rechercher" id="search-toggle">
-        <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
-      </button>
-      <a href="#" aria-label="Trouver un point de vente" title="Trouver un point de vente">
-        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-      </a>
-      <a href="#" aria-label="Mon compte" title="Mon compte">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-      </a>
-      <a href="#" aria-label="Liste de souhaits" title="Liste de souhaits">
-        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4 4 0 0112 8a4 4 0 017 2.7C19 15.4 12 20 12 20z"/></svg>
-      </a>
-      <a href="#" aria-label="Panier" title="Panier" data-open-cart>
-        <svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
-        <span class="cart-count" data-cart-count>0</span>
-      </a>
-    </div>
-  </div>
-
-  <nav class="nav" aria-label="Navigation principale">
-    <ul>
-      <li><a href="category.html?c=nouveautes">Nouveautés</a></li>
-      <li><a href="category.html?c=tous-les-jellywons">Tous les Jellywons</a></li>
-      <li><a href="category.html?c=collections">Collections</a></li>
-      <li><a href="product.html?p=jellywon-mystere">Jellywon Myst&egrave;re</a></li>
-      <li><a href="category.html?c=packs-jellywon">Packs Jellywon</a></li>
-      <li><a href="category.html?c=halloween">Halloween &#127875;</a></li>
-      <li><a href="category.html?c=animaux">Animaux</a></li>
-      <li><a href="category.html?c=amuseables">Amuseables</a></li>
-      <li><a href="category.html?c=accessoires">Accessoires</a></li>
-      <li><a href="category.html?c=bebe">Bébé</a></li>
-      <li><a href="category.html?c=livres">Livres</a></li>
-      <li><a href="category.html?c=personnalisation">Personnalisation</a></li>
-      <li><a href="category.html?c=idees-cadeaux">Idées Cadeaux</a></li>
-      <li><a href="index.html">Jelly Journal</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="container">
-  <nav class="crumbs" aria-label="Fil d'Ariane" data-crumbs></nav>
-
-  <div class="pdp">
-    <!-- Galerie ------------------------------------------------------- -->
-    <div class="pdp__gallery">
-      <div class="pdp__thumbs" data-thumbs></div>
-      <div class="pdp__main"><img data-main-img src="" alt=""></div>
-    </div>
-
-    <!-- Informations --------------------------------------------------- -->
-    <div class="pdp__info">
-      <h1 data-name></h1>
-      <p class="pdp__price" data-price></p>
-
-      <p class="pdp__rating">
-        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <a href="#avis" data-reviews-count></a>
-      </p>
-
-      <button class="pdp__sizelink" type="button">Quelle est ma taille&nbsp;?</button>
-
-      <dl class="pdp__dims">
-        <div><dt>Dimensions</dt><dd data-dim></dd></div>
-        <div><dt>SKU</dt><dd data-sku></dd></div>
-      </dl>
-
-      <button class="btn pdp__wish" type="button">Ajouter à ma wishlist</button>
-      <button class="btn-cart" type="button" data-add-cart>Ajouter au panier</button>
-      <p class="pdp__added" data-added hidden>Ajouté à votre panier&nbsp;!</p>
-
-      <!-- Accordeons -->
-      <div class="acc">
-        <details class="acc__item" open>
-          <summary>NOUS DISONS...</summary>
-          <div class="acc__body" data-desc></div>
-        </details>
-
-        <details class="acc__item">
-          <summary>DÉTAILS DU PRODUIT</summary>
-          <div class="acc__body">
-            <p>SKU&nbsp;: <span data-sku></span></p>
-            <p>Dimensions&nbsp;: <span data-dim></span></p>
-            <p>En savoir plus sur les tailles et notre méthode de mesure.</p>
-            <p>Consulter les caractéristiques environnementales.</p>
-            <p>Vous souhaitez offrir un cadeau&nbsp;? Découvrez nos options cadeaux.</p>
-          </div>
-        </details>
-
-        <details class="acc__item">
-          <summary>SÉCURITÉ ET ENTRETIEN</summary>
-          <div class="acc__body">
-            <p>En savoir plus sur la sécurité et l'entretien.</p>
-          </div>
-        </details>
-
-        <details class="acc__item">
-          <summary>INFORMATIONS DE LIVRAISON</summary>
-          <div class="acc__body">
-            <p>Livraison gratuite en France métropolitaine dès 75&euro; d'achat.</p>
-            <p>Nous livrons également dans plus de 150 pays à travers le monde. Toutes les taxes et droits de douane sont inclus dans le montant de votre commande. Pour plus d'informations, vous pouvez consulter notre page sur les livraisons.</p>
-          </div>
-        </details>
-
-        <details class="acc__item">
-          <summary>RETOURS</summary>
-          <div class="acc__body">
-            <p>Vous pouvez consulter toutes les informations concernant les retours dans notre politique de retour.</p>
-            <p>Merci de noter que les articles personnalisés ne sont pas éligibles à un échange ou à un remboursement.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </div>
-
-  <!-- Avis ------------------------------------------------------------- -->
-  <section class="reviews" id="avis">
-    <div class="reviews__head">
-      <h2>AVIS</h2>
-      <p><strong>5</strong> <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span data-reviews-count></span></p>
-      <button class="btn" type="button">Rédiger un avis</button>
-    </div>
-    <p class="reviews__note">Certains avis ont été soumis par des membres Purrks, qui ont gagné le badge Review Hero grâce à leur avis. Rejoignez Purrks pour gagner des récompenses en laissant vos avis, en effectuant des achats, et bien plus encore.</p>
-    <div class="reviews__list" data-reviews></div>
-  </section>
-
-  <!-- Vous aimerez aussi ------------------------------------------------ -->
-  <section class="rail" aria-label="Pour vous">
-    <div class="rail__head">
-      <h2>POUR VOUS</h2>
-      <a href="category.html?c=tous-les-jellywons">Tout voir</a>
-    </div>
-    <div class="rail__viewport" data-rail>
-      <div class="rail__scroller" data-rail-scroller data-related></div>
-      <button class="rail__arrow rail__arrow--prev" data-rail-prev aria-label="Produits précédents"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button class="rail__arrow rail__arrow--next" data-rail-next aria-label="Produits suivants"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__cols">
-      <div>
-        <h3>Shopping</h3>
-        <ul>
-          <li><a href="#">Nous Contacter</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Livraison</a></li>
-          <li><a href="#">Retours</a></li>
-          <li><a href="#">Options Cadeaux</a></li>
-          <li><a href="#">Guide des Tailles</a></li>
-          <li><a href="#">Conseils d'Entretien</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>À propos</h3>
-        <ul>
-          <li><a href="#">Notre Histoire</a></li>
-          <li><a href="#">Jelly Journal</a></li>
-          <li><a href="#">Presse</a></li>
-          <li><a href="#">Événements &amp; Expériences</a></li>
-          <li><a href="#">Trouver un Point de Vente</a></li>
-          <li><a href="#">S'inscrire à la Newsletter</a></li>
-          <li><a href="#">Jellywon Purrks</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Mentions légales</h3>
-        <ul>
-          <li><a href="#">CGV</a></li>
-          <li><a href="#">CGU</a></li>
-          <li><a href="#">CGU Jellywon Purrks</a></li>
-          <li><a href="#">Confidentialité &amp; Cookies</a></li>
-          <li><a href="#">Protection de la Marque</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Nos engagements</h3>
-        <ul>
-          <li><a href="#">Nos Engagements</a></li>
-          <li><a href="#">Caractéristiques Environnementales</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer__region">
-      <strong>Jellywon autour du monde</strong>
-      <a href="#">Royaume-Uni</a>
-      <a href="#">USA, Canada &amp; Mexique</a>
-      <a href="#">Allemagne</a>
-      <a href="#">France</a>
-      <a href="#">Corée</a>
-      <a href="#">Europe &amp; International</a>
-    </div>
-
-    <div class="footer__bottom">
-      <p>&copy; Jellywon 2026 &mdash; Tous droits réservés</p>
-      <div class="footer__social">
-        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 3a5 5 0 005 5v3a8 8 0 01-5-1.8V15a6 6 0 11-6-6c.3 0 .7 0 1 .1v3.1a3 3 0 101 2.3V3h4z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1.1 0 1.8.2 2.4.5.7.3 1.2.6 1.7 1.2.6.5.9 1 1.2 1.7.3.6.5 1.3.5 2.4C22 9 22 9.3 22 12s0 3-.1 4.1c0 1.1-.2 1.8-.5 2.4-.3.7-.6 1.2-1.2 1.7-.5.6-1 .9-1.7 1.2-.6.3-1.3.5-2.4.5C15 22 14.7 22 12 22s-3 0-4.1-.1c-1.1 0-1.8-.2-2.4-.5-.7-.3-1.2-.6-1.7-1.2-.6-.5-.9-1-1.2-1.7-.3-.6-.5-1.3-.5-2.4C2 15 2 14.7 2 12s0-3 .1-4.1c0-1.1.2-1.8.5-2.4.3-.7.6-1.2 1.2-1.7.5-.6 1-.9 1.7-1.2.6-.3 1.3-.5 2.4-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-3.3a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
-        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.5 1.6-1.5h1.6V4.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.5V14h2.8v8h3.2z"/></svg></a>
-        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M18.9 3H22l-6.8 7.8L23 21h-6.2l-4.9-6.3L6.3 21H3.2l7.2-8.3L2.5 3h6.4l4.4 5.8L18.9 3zm-1.1 16.2h1.7L8.3 4.7H6.5l11.3 14.5z"/></svg></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Modale guide des tailles -->
-<div class="sizeguide-overlay" id="sizeguide-overlay"></div>
-<div class="sizeguide" id="sizeguide" role="dialog" aria-modal="true" aria-labelledby="sizeguide-title">
-  <div class="sizeguide__head">
-    <h2 id="sizeguide-title">Guide des tailles</h2>
-    <button class="sizeguide__close" id="sizeguide-close" aria-label="Fermer">&times;</button>
-  </div>
-  <div class="sizeguide__body">
-    <p>Toutes nos peluches sont mesurées en position assise, du haut de la tête jusqu&rsquo;aux pieds.</p>
-    <table class="sizeguide__table">
-      <thead>
-        <tr><th>Taille</th><th>Hauteur</th><th>Idéal pour</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Tiny</td><td>12 cm</td><td>Porte-clés, poche, cadeau surprise</td></tr>
-        <tr><td>Small</td><td>18 cm</td><td>Premier câlin, tout-petits</td></tr>
-        <tr><td>Medium</td><td>28 cm</td><td>La taille la plus adoptée</td></tr>
-        <tr><td>Large</td><td>36 cm</td><td>Compagnon de lit, cadeau marquant</td></tr>
-        <tr><td>Really Big</td><td>50 cm et +</td><td>Pièce de collection, décoration</td></tr>
-      </tbody>
-    </table>
-    <p class="sizeguide__note">Les dimensions exactes de ce produit sont indiquées dans la section &laquo;&nbsp;Détails du produit&nbsp;&raquo;. Une tolérance de 1 à 2 cm est possible, chaque peluche étant assemblée à la main.</p>
-  </div>
-</div>
-<!-- Tiroir panier / paiement -->
-<div class="drawer-overlay" id="drawer-overlay"></div>
-<aside class="drawer" id="cart-drawer" aria-label="Panier et paiement">
-  <div class="drawer__head">
-    <h2>Votre panier</h2>
-    <button class="drawer__close" id="drawer-close" aria-label="Fermer">&times;</button>
-  </div>
-
-  <div class="drawer__items" id="drawer-items"></div>
-  <p class="drawer__empty" id="drawer-empty">Votre panier est vide.</p>
-
-  <div class="drawer__shipping">🚚 Livraison offerte dès 2€</div>
-
-  <div class="drawer__spacer"></div>
-
-  <div class="drawer__total" id="drawer-total" hidden>
-    <span>Total estimé</span>
-    <strong id="drawer-total-amount"></strong>
-  </div>
-  <p class="drawer__promo" id="drawer-promo" hidden></p>
-  <a class="drawer__checkout" id="drawer-checkout" href="shipping.html" hidden>Procéder au paiement</a>
-</aside>
-
-<script src="products.js"></script>
-<script src="categories.js"></script>
-<script src="script.js"></script>
-<script src="product.js"></script>
-<!-- Statcounter (suite du bloc place dans le <head>) : image de repli pour
-     les visiteurs sans JavaScript. Elle doit rester dans le <body> — un
-     <div> dans un <noscript> du <head> est invalide et referme le head. -->
-<noscript><div class="statcounter"><a title="Web Analytics Made Easy - Statcounter"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13355023/0/32c182ab/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <span class="logo">Jellypin</span>
+  <p>Redirection vers la boutique…</p>
+  <p><a href="https://jellypin.site/product.html">Continuer vers jellypin.site</a></p>
 </body>
 </html>
